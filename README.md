@@ -86,5 +86,5 @@ $ pecl install imagick
 You need to pull in the php packages that this benchmark needs.
 
 ```
-$ composer install
+$ php ~/packages/php/composer.phar install
 ```

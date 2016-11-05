@@ -7,7 +7,8 @@ $geo = $im->getImageGeometry();
 $im->cropImage($geo['width'] - 200, $geo['height'] - 200, 100, 100);
 
 $geo = $im->getImageGeometry(); 
-$im->resizeImage($geo['width'] * 0.9, $geo['height'] * 0.9, imagick::FILTER_TRIANGLE, 1);
+$im->resizeImage($geo['width'] * 0.9, $geo['height'] * 0.9, 
+    imagick::FILTER_TRIANGLE, 1);
 
 // not quite right, but I don't see how to specify a scale
 $kernel = [-1, -1, -1, -1, 8, -1, -1, -1, -1];
@@ -17,4 +18,11 @@ $im->writeImage($argv[2]);
 
 $im->destroy();
 
-?>
+/*
+ * Local variables:
+ * tab-width: 4
+ * c-basic-offset: 4
+ * End:
+ * vim600: expandtab sw=4 ts=4 fdm=marker
+ * vim<600: expandtab sw=4 ts=4
+ */

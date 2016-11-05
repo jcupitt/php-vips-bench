@@ -38,9 +38,9 @@ fi
 function bestof3() {
   prg=$*
 
-  t1=$($time -f %e $prg 2>&1)
-  t2=$($time -f %e $prg 2>&1)
-  t3=$($time -f %e $prg 2>&1)
+  t1=$($time -f %e $prg 2>&1 >/dev/null)
+  t2=$($time -f %e $prg 2>&1 >/dev/null)
+  t3=$($time -f %e $prg 2>&1 >/dev/null)
 
   if [[ $t2 < $t1 ]]; then
 	  t1=$t2
@@ -55,7 +55,7 @@ function bestof3() {
 function maxmem() {
   prg=$*
 
-  m=$($time -f %M $prg 2>&1)
+  m=$($time -f %M $prg 2>&1 >/dev/null)
 
   echo -n -e "$(basename $1)\t"
   echo $m

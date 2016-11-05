@@ -4,36 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "331f76e53daa47e711268a7b006dbba5",
-    "content-hash": "07adee25d32f1573330c730fad0b4ce6",
+    "hash": "9836159ec7d01b607fd20923c2fd8da6",
+    "content-hash": "34dd1754af7e051e320f11a1fc7af73b",
     "packages": [
         {
             "name": "jcupitt/vips",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jcupitt/php-vips.git",
-                "reference": "14f97cc288ed0a4956ab600339d75ac96323d53e"
+                "reference": "3adaaa3c5d81369273c0b90d59e08f200ec5b9bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jcupitt/php-vips/zipball/14f97cc288ed0a4956ab600339d75ac96323d53e",
-                "reference": "14f97cc288ed0a4956ab600339d75ac96323d53e",
+                "url": "https://api.github.com/repos/jcupitt/php-vips/zipball/3adaaa3c5d81369273c0b90d59e08f200ec5b9bb",
+                "reference": "3adaaa3c5d81369273c0b90d59e08f200ec5b9bb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "ext-vips": ">=0.1.2",
+                "php": ">=7.0.11",
+                "psr/log": "^1.0.1"
             },
             "require-dev": {
+                "jakub-onderka/php-parallel-lint": "^0.9",
                 "phpdocumentor/phpdocumentor": "2.*",
-                "phpunit/phpunit": "4.*"
+                "phpunit/phpunit": "^5.5"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Jcupitt\\Vips\\": "src"
@@ -58,15 +56,60 @@
                 "libvips",
                 "processing"
             ],
-            "time": "2016-09-21 10:35:59"
+            "time": "2016-11-04 17:46:04"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-10-10 12:19:37"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "jcupitt/vips": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
