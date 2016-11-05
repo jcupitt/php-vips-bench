@@ -63,7 +63,7 @@ gd.php      1.85
 ### Preparation
 
 You need the libvips library, plus all the development files. You can probably
-install via your package manager on linux or OS X. For Windows, you can
+install via your package manager on linux or macOS. For Windows, you can
 download a pre-compiled binary from the vips website:
 
 http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS
