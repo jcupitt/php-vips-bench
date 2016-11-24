@@ -72,12 +72,13 @@ You can also compile libvips from source:
 
 https://github.com/jcupitt/libvips
 
-You need to install the `vips` extension for PHP. This is not yet in pecl, you
-have to clone the repository, make the package and install it. See:
+You need to install the `vips` extension for PHP:
 
-https://github.com/jcupitt/php-vips-ext
+```
+$ pecl install vips
+```
 
-`imagick` is easy to install. `gd` is probably built into your php already.
+`gd` is probably built into your php already. `imagick` is easy to install:
 
 ```
 $ pecl install imagick
