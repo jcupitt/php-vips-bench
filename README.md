@@ -17,7 +17,7 @@ load, save, resample and filter.
 The vips website has this same test performed in many different image
 processing systems, with some discussion:
 
-http://www.vips.ecs.soton.ac.uk/index.php?title=Speed_and_Memory_Use
+https://github.com/jcupitt/libvips/wiki/Speed-and-memory-use
 
 ### Results
 
@@ -66,7 +66,7 @@ You need the libvips library, plus all the development files. You can probably
 install via your package manager on linux or macOS. For Windows, you can
 download a pre-compiled binary from the vips website:
 
-http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS
+https://github.com/jcupitt/libvips/releases
 
 You can also compile libvips from source:
 
